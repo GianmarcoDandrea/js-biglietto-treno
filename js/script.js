@@ -5,19 +5,20 @@ console.log(userKm, userAge)
 
 
 // LOGICA
+const elderAge = 65;
 const elderDiscount = (60 / 100);
+const minorAge = 18;
 const minorDiscount = (80 / 100);
 const normalPrice = userKm * 0.21;
 let totalPrice = "";
 
-if (userAge > 65) {
+if (userAge > elderAge) {
     totalPrice = elderDiscount * normalPrice;
-} else if (userAge < 18) {
+} else if (userAge < minorAge) {
     totalPrice = minorDiscount * normalPrice;
 } else {
     totalPrice = normalPrice;
 }
-
 console.log(totalPrice);
 
 const message = totalPrice.toFixed(2);
