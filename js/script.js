@@ -22,7 +22,6 @@ if (userAge > elderAge) {
 console.log(totalPrice);
 
 const message = totalPrice.toFixed(2);
-
 console.log(message);
 
 document.getElementById("price").innerHTML = message + "€";
